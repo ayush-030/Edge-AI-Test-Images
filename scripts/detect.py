@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 import os
 
-# Load COCO pretrained YOLOv8 nano
+# Loading COCO pretrained YOLOv8 nano
 model = YOLO("yolov8n.pt")
 
 image_dir = "../elephant"
@@ -20,9 +20,9 @@ for img_name in os.listdir(image_dir):
         cls_id = int(box.cls)
         conf = float(box.conf)
 
-        # COCO elephant class ID = 20
+        # The COCO elephant class ID = 20
         if cls_id == 20:
             print(f"[{img_name}] Elephant detected | confidence = {conf:.2f}")
 
-    # Save output
+    # Saving the output
     results[0].save(filename=f"output_{img_name}")
