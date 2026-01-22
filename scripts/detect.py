@@ -5,7 +5,7 @@ from ultralytics import YOLO
 # Load COCO-pretrained YOLOv8 nano
 model = YOLO("yolov8n.pt")
 
-IMAGE_DIR = "../images"
+IMAGE_DIR = "../elephant"
 OUTPUT_DIR = "../outputs"
 ELEPHANT_CLASS_ID = 20  # COCO class ID
 
