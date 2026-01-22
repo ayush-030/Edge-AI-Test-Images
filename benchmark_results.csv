@@ -1,0 +1,2 @@
+Model,Inference_time_ms,FPS,Avg_CPU_percent,Avg_GPU_percent
+YOLOv8n,499.73,2.0,35.83,N/A
